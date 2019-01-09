@@ -11,3 +11,6 @@ con <- DBI::dbConnect(RPostgreSQL::PostgreSQL(),
 
 
 o_teacher<-tbl(con, "o_teacher")
+
+dbDisconnect(con)
+
